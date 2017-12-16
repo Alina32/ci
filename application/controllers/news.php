@@ -22,7 +22,7 @@ class News extends CI_Controller {
 
 	public function insert_news() {
 		if ( !empty($_POST) ) {
-			$request['request'] = $this->input->post();
+			$request['request'] = $this->input->post();// добавляем данные из формы в элемент массива $request с ключом  'request'
 			$request_to_db = Array(
 				'title' => $request['request']['title'],
 				'date' => date('Y-m-d'),
