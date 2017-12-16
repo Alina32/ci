@@ -13,6 +13,11 @@ class Property_details extends CI_Controller {
         $this->load->view('property_details_viewer', $this->data);
         $this->load->view('static/footer_view', $this->data);
     }
+
+    /**
+     * [insert_property_details description]
+     * @return NULL
+     */
     public function insert_property_details() {
         if ( !empty($_POST) ) {
             $request['request'] = $this->input->post();
